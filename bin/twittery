@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+
+var nconf = require('nconf');
+var Twittery = require('../');
+
+nconf
+  .env('_')
+  .argv({
+    help:   { alias: 'h' },
+    port:   { alias: 'p' },
+    config: { alias: 'c' }
+  });
+
+nconf.defaults({
+  port: 3000,
+  config: 'config/development.json'
+});
+
+nconf.file(nconf.get('config'));
+
+if (nconf.get('help')) {
+  console.log([
+    'usage: twittery [options]\n',
+    'options:',
+    '  -p, --port   Port to chill on',
+    '  -c, --config Config file to use',
+    '  -h, --help   O HAI THERE!'
+  ].join('\n') + '\n');
+  process.exit();
+}
+
+var twit = new Twittery();
+
+//
+// Log Errors to console so we know what may be going on
+//
+twit.on('error', function (err) {
+  console.log(err)
+});
+
+var port = nconf.get('port');
+
+twit.listen(port, function () {
+  console.log('Listening on port: ' + port);
+});

@@ -1,0 +1,27 @@
+{
+  "name": "twittery",
+  "description": "demo application to run with level-agile",
+  "version": "0.0.0",
+  "author": "Jarrett Cruger <jcrugzz@gmail.com>",
+  "repository": {
+    "url": "git://github.com/jcrugzz/level-demo.git"
+  },
+  "main": "lib/twittery.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "primus": "~1.4.0",
+    "nconf": "~0.6.7",
+    "level-agile": "~0.1.0",
+    "ws": "~0.4.30",
+    "twitstream": "0.0.1"
+  },
+  "devDependencies": {
+    "tape": "~1.0.2"
+  },
+  "license": "MIT"
+}
