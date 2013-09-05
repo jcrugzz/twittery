@@ -91,7 +91,7 @@
       });
 
       primus.on('data', function incoming(data) {
-        log('data', 'Received data', 'string' === typeof data ? data : '<pre><code>'+ JSON.stringify(data, null, 2) +'</code></pre>');
+        log('data', 'Tweet', '<b>' + data.user + ':</b> ' + data.tweet);
       });
 
       primus.on('end', function end() {
