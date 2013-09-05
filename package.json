@@ -16,9 +16,10 @@
   "dependencies": {
     "primus": "~1.4.0",
     "nconf": "~0.6.7",
-    "level-agile": "~0.1.0",
+    "level-agile": "~0.2.0",
     "ws": "~0.4.30",
-    "twitstream": "0.0.1"
+    "twitstream": "0.0.1",
+    "monotonic-timestamp": "0.0.8"
   },
   "devDependencies": {
     "tape": "~1.0.2"
