@@ -38,8 +38,6 @@ twit.on('error', function (err) {
   console.log(err)
 });
 
-var port = nconf.get('port');
-
-twit.track('leveldb', function () {
+twit.track(['nodejs, javascript', 'node'], function () {
   console.log('Twinsert has begun!')
 });
