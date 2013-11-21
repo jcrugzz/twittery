@@ -19,6 +19,6 @@ In order to supply all of these values, you must register an app with
 
 Once this is done, just run the file [`bin/level-agile`][level-agile] in
 a separate terminal, and then launch the `bin/twinsert` process. This will start
-feeding information from twitter into the [`level-agile`] database.
+feeding information from twitter into the [`level-agile`][level-agile] database.
 
 [level-agile]: https://github.com/jcrugzz/level-agile
