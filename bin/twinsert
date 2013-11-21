@@ -38,6 +38,6 @@ twit.on('error', function (err) {
   console.log(err)
 });
 
-twit.track(['nodejs, javascript', 'node'], function () {
+twit.track(['kanye west'], function () {
   console.log('Twinsert has begun!')
 });
