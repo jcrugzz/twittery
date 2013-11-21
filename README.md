@@ -21,4 +21,7 @@ Once this is done, just run the file [`bin/level-agile`][level-agile] in
 a separate terminal, and then launch the `bin/twinsert` process. This will start
 feeding information from twitter into the [`level-agile`][level-agile] database.
 
+To view this data in the browser, run the `bin/twittery` web server. Open up
+a browser window at http://localhost:3000 and hit connect. OMG TWEET DATA!
+
 [level-agile]: https://github.com/jcrugzz/level-agile
